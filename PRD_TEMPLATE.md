@@ -85,7 +85,7 @@
 - shadcn/ui 컴포넌트 사용
 
 # Claude에게 전달할 프롬프트
-@PRD.md 를 읽고 이 서비스를 만들어줘.
+@PRD_TEMPLATE.md 를 읽고 이 서비스를 만들어줘.
 Next.js + Tailwind CSS + Supabase 스택으로 구현해줘.
 CLAUDE.md 규칙도 함께 지켜줘.
 ```
