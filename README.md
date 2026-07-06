@@ -16,7 +16,16 @@ Claude Code에서 아래와 같이 요청하세요.
 내 GitHub 이메일은 [이메일 주소] 야.
 ```
 
-### 3단계. Claude 실행
+### 3단계. 패키지 설치
+clone 후에는 반드시 아래 명령어를 실행해야 합니다.
+```bash
+npm install
+```
+
+> clone하면 코드만 가져오고 실행에 필요한 패키지는 포함되지 않습니다.
+> `npm install`이 이 패키지들을 설치해줍니다. 처음 한 번만 하면 됩니다.
+
+### 4단계. Claude 실행
 ```bash
 claude
 ```
@@ -58,8 +67,11 @@ claude
 **Q. 코딩을 전혀 몰라도 되나요?**
 네. Claude에게 원하는 것을 말로 설명하면 됩니다.
 
+**Q. `npm run dev` 했는데 'next'을 찾을 수 없다고 나와요.**
+`npm install`을 먼저 실행하세요. clone 후 반드시 한 번 해야 합니다.
+
 **Q. 로컬에서 실행하려면 어떻게 하나요?**
-Claude에게 `npm run dev 실행해줘` 라고 요청하세요.
+`npm install` 후 `npm run dev` 를 실행하면 브라우저에서 `http://localhost:3000` 으로 접속할 수 있어요.
 
 **Q. 에러가 났어요.**
 에러 메시지를 그대로 Claude에게 붙여넣으세요.
